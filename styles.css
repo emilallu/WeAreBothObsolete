@@ -436,7 +436,7 @@ main.home {
 /* Bottom-right phone, moved higher */
 .bottom-phone {
   position: absolute;
-  bottom: 650px;   /* moved even higher from bottom */
+  bottom: 850px;   /* moved even higher from bottom */
   right: 40px;     /* breathing room from right edge */
   width: 350px;    /* container width */
   text-align: left; /* label + number align left */
@@ -1049,6 +1049,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
