@@ -367,58 +367,79 @@ main.home {
   display: block;
 }
 
-/* CONTACT PAGE BACKGROUND */
+/* Container padding for breathing room */
 .page-contact main.contact {
-  background-image: url("contact.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 190vh; /* allows scrolling for positioned content */
   position: relative;
-  padding: 200px 200px;
+  min-height: 190vh; /* scrolling space */
+  padding: 100px 100px; /* reduce so edges don’t feel tight */
 }
 
-/* Email - bottom left */
-.email {
+/* Email - bottom-left */
+.bottom-email {
   position: absolute;
-  bottom: 0;       /* hug bottom */
-  left: 0;         /* hug left edge */
+  bottom: 40px; /* breathing room from bottom */
+  left: 40px;   /* breathing room from left */
   z-index: 3;
-  width: 400px;    /* adjust as needed */
+  width: 350px; /* adjust as needed */
 }
 
-.email img {
+.bottom-email img {
   width: 100%;
   height: auto;
 }
 
-/* Address - bottom middle */
-.address,
-.address-info {
+.bottom-address {
   position: absolute;
-  bottom: 0;                 /* hug bottom */
-  left: 50%;                 /* center horizontally */
+  bottom: 40px;
+  left: 50%;
   transform: translateX(-50%);
+  text-align: left; /* aligns text to left edge of the container */
   z-index: 3;
-  text-align: center;        /* center text inside */
-  font-family: "Inter Display", sans-serif;
-  font-weight: 700;          /* bold for label, lighter for info if needed */
-  font-size: 50px;           /* adjust size as needed */
-  color: #f8f8f8;            /* same as your other contact text */
-  white-space: pre;          /* preserves line breaks in address-info */
+  width: 500px; /* set a fixed width so left alignment has room */
 }
 
-/* Phone - bottom right, slightly up */
-.phone,
-.number {
-  position: absolute;
-  bottom: 80px;   /* slightly above bottom */
-  right: 0;       /* hug right edge */
-  z-index: 3;
-  text-align: right;
+.address-label {
   font-family: "Inter Display", sans-serif;
-  font-weight: 700;  /* label bold, number lighter if needed */
-  font-size: 60px;   /* adjust size */
+  font-size: 60px;
+  font-weight: 700;
   color: #f8f8f8;
+  margin-bottom: 10px;
+  text-align: center; /* label can stay centered if you want */
+}
+
+.address-info {
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  line-height: 1.5;
+  white-space: pre;
+  text-align: left; /* stacks touching left side of box */
+}
+
+/* Phone - bottom-right, slightly up */
+.bottom-phone {
+  position: absolute;
+  bottom: 80px; /* slightly above bottom for variation */
+  right: 40px;  /* breathing room from right */
+  text-align: right;
+  z-index: 3;
+}
+
+.phone-label {
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f8f8;
+  margin-bottom: 10px; /* space between label and number */
+}
+
+.number {
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  white-space: nowrap;
 }
 
 /* =========================
@@ -1009,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
