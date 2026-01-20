@@ -394,7 +394,7 @@ main.home {
 .bottom-address {
   position: absolute;
   bottom: 40px;   /* breathing room from bottom */
-  left: 55%;      /* moves the whole block to the right; tweak % as needed */
+  left: 30%;      /* moves the whole block to the right; tweak % as needed */
   width: 500px;   /* container width */
   z-index: 3;
   text-align: left; /* ensures everything inside aligns left */
@@ -1036,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
