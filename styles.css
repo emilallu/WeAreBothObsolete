@@ -394,7 +394,7 @@ main.home {
 .bottom-address {
   position: absolute;
   bottom: 40px;   /* breathing room from bottom */
-  left: 65%;      /* moves the whole block to the right; tweak % as needed */
+  left: 55%;      /* moves the whole block to the right; tweak % as needed */
   width: 500px;   /* container width */
   z-index: 3;
   text-align: left; /* ensures everything inside aligns left */
@@ -423,7 +423,7 @@ main.home {
 /* Bottom-right phone */
 .bottom-phone {
   position: absolute;
-  bottom: 140px;    /* move up by ~60px (was 80px) */
+  bottom: 300px;    /* move up by ~60px (was 80px) */
   right: 40px;      /* breathing room from right edge */
   width: 350px;     /* container width */
   text-align: left; /* align label + number to left inside container */
@@ -1036,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
