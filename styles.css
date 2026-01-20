@@ -376,31 +376,16 @@ main.home {
   padding: 200px 200px;          /* breathing room from edges */
 }
 
-/* Bottom-left email */
-.bottom-email {
-  position: absolute; 
-  bottom: 40px;   /* breathing room */
-  left: 40px;     /* breathing room */
-  z-index: 3;
-  width: 350px;
-}
-
-.bottom-email img {
-  width: 100%;
-  height: auto;
-}
-
-/* Bottom-left email */
 .bottom-email {
   position: absolute;
   bottom: 40px;   /* breathing room from bottom */
   left: 40px;     /* breathing room from left edge */
-  width: 350px;   /* adjust size as needed */
+  width: 450px;   /* increased from 350px to 450px */
   z-index: 3;
 }
 
 .bottom-email img {
-  width: 100%;
+  width: 100%;   /* fills container */
   height: auto;
 }
 
@@ -1049,6 +1034,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
