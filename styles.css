@@ -380,12 +380,12 @@ main.home {
   position: absolute;
   bottom: 40px;   /* breathing room from bottom */
   left: 40px;     /* breathing room from left edge */
-  width: 450px;   /* increased from 350px to 450px */
+  width: 600px;   /* increased from 350px to 450px */
   z-index: 3;
 }
 
 .bottom-email img {
-  width: 130%;   /* fills container */
+  width: 200%;   /* fills container */
   height: auto;
 }
 
@@ -1034,6 +1034,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
