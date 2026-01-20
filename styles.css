@@ -374,13 +374,13 @@ main.home {
   padding: 100px; /* reduce so edges don’t feel tight */
 }
 
-/* Email - bottom-left */
+/* Bottom-left email */
 .bottom-email {
-  position: absolute;
-  bottom: 40px; /* breathing room from bottom */
-  left: 40px;   /* breathing room from left */
+  position: absolute; 
+  bottom: 40px;   /* breathing room */
+  left: 40px;     /* breathing room */
   z-index: 3;
-  width: 350px; /* adjust as needed */
+  width: 350px;
 }
 
 .bottom-email img {
@@ -388,14 +388,14 @@ main.home {
   height: auto;
 }
 
+/* Bottom-middle address */
 .bottom-address {
   position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translateX(-50%);
-  text-align: left; /* aligns text to left edge of the container */
+  transform: translateX(-50%); /* center container */
+  width: 500px;                /* container width to prevent collapse */
   z-index: 3;
-  width: 500px; /* set a fixed width so left alignment has room */
 }
 
 .address-label {
@@ -404,7 +404,7 @@ main.home {
   font-weight: 700;
   color: #f8f8f8;
   margin-bottom: 10px;
-  text-align: center; /* label can stay centered if you want */
+  text-align: center;  /* label above info can be centered */
 }
 
 .address-info {
@@ -414,14 +414,15 @@ main.home {
   color: #f8f8f8;
   line-height: 1.5;
   white-space: pre;
-  text-align: left; /* stacks touching left side of box */
+  text-align: left;  /* left-aligned inside box */
 }
 
-/* Phone - bottom-right, slightly up */
+/* Bottom-right phone */
 .bottom-phone {
   position: absolute;
-  bottom: 80px; /* slightly above bottom for variation */
-  right: 40px;  /* breathing room from right */
+  bottom: 80px;   /* slightly above bottom */
+  right: 40px;    /* breathing room from edge */
+  width: 350px;   /* prevent collapse */
   text-align: right;
   z-index: 3;
 }
@@ -431,7 +432,7 @@ main.home {
   font-size: 60px;
   font-weight: 700;
   color: #f8f8f8;
-  margin-bottom: 10px; /* space between label and number */
+  margin-bottom: 10px;
 }
 
 .number {
@@ -1030,6 +1031,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
