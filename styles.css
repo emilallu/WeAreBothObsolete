@@ -165,15 +165,21 @@ main.home {
 }
 
 .trash-overlay {
-  position: absolute;
+  position: absolute;   /* overlay on top of background */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh; /* full viewport height */
-  pointer-events: none;
-  z-index: -1;
-  background-image: url("hometrash.png");
-  background-size: contain;
+  width: 100%;          /* spans full width of parent */
+  height: 100%;         /* spans full height of parent */
+  pointer-events: none; /* clicks pass through */
+  z-index: 1;           /* behind main text */
+}
+
+.trash-overlay img {
+  position: absolute;   /* absolute inside overlay */
+  bottom: 0px;        /* push lower than page */
+  left: 0px;          /* hug right side */
+  width: 100%;           /* scales larger */
+  height: auto;         /* maintain aspect ratio */
 }
 
 .logo {
@@ -1029,6 +1035,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
