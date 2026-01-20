@@ -390,24 +390,37 @@ main.home {
   height: auto;
 }
 
-/* Bottom-middle / shifted-right address */
+/* Bottom-left email */
+.bottom-email {
+  position: absolute;
+  bottom: 40px;   /* breathing room from bottom */
+  left: 40px;     /* breathing room from left edge */
+  width: 350px;   /* adjust size as needed */
+  z-index: 3;
+}
+
+.bottom-email img {
+  width: 100%;
+  height: auto;
+}
+
+/* Bottom-middle / shifted-left address */
 .bottom-address {
   position: absolute;
   bottom: 40px;   /* breathing room from bottom */
-  left: 30%;      /* moves the whole block to the right; tweak % as needed */
+  left: 30%;      /* shift block more toward left */
   width: 500px;   /* container width */
   z-index: 3;
-  text-align: left; /* ensures everything inside aligns left */
+  text-align: left; /* ensures label + text align left */
 }
 
-/* Label aligned with text */
 .address-label {
   font-family: "Inter Display", sans-serif;
   font-size: 60px;
   font-weight: 700;
   color: #f8f8f8;
-  margin-bottom: 10px;
-  text-align: left;  /* aligned with the text */
+  margin-bottom: 10px;  
+  text-align: left;  /* label aligns with text */
 }
 
 .address-info {
@@ -417,16 +430,16 @@ main.home {
   color: #f8f8f8;
   line-height: 1.5;
   white-space: pre;
-  text-align: left;  /* stacks text starting at left edge of container */
+  text-align: left;  /* left-aligned text */
 }
 
-/* Bottom-right phone */
+/* Bottom-right phone, moved way higher */
 .bottom-phone {
   position: absolute;
-  bottom: 500px;    /* move up by ~60px (was 80px) */
-  right: 40px;      /* breathing room from right edge */
-  width: 350px;     /* container width */
-  text-align: left; /* align label + number to left inside container */
+  bottom: 500px;   /* moves phone much higher from bottom */
+  right: 40px;     /* breathing room from right edge */
+  width: 350px;    /* container width */
+  text-align: left; /* label + number align left */
   z-index: 3;
 }
 
@@ -435,8 +448,8 @@ main.home {
   font-size: 60px;
   font-weight: 700;
   color: #f8f8f8;
-  margin-bottom: 10px; /* spacing between label and number */
-  text-align: left;     /* ensures left alignment inside container */
+  margin-bottom: 10px;
+  text-align: left; /* left-aligned label */
 }
 
 .number {
@@ -445,7 +458,7 @@ main.home {
   font-weight: 300;
   color: #f8f8f8;
   white-space: nowrap;
-  text-align: left;    /* aligns with label */
+  text-align: left;  /* left-aligned with label */
 }
 
 /* =========================
@@ -1036,6 +1049,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
