@@ -172,9 +172,8 @@ main.home {
   height: 100%;
   pointer-events: none;
   z-index: 1;
-
   background-image: url("hometrash.png");
-  background-size: contain;       /* or cover if you want it to fill */
+  background-size: cover;       /* or cover if you want it to fill */
   background-repeat: no-repeat;
 }
 
@@ -1031,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
