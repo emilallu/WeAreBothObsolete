@@ -372,7 +372,7 @@ main.home {
   background-image: url("contact.png");
   background-size: cover;
   background-position: center;
-  min-height: 160vh; /* allows scrolling for positioned content */
+  min-height: 190vh; /* allows scrolling for positioned content */
   position: relative;
   padding: 200px 200px;
 }
@@ -1030,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
