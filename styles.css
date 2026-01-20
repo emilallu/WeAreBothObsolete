@@ -373,7 +373,7 @@ main.home {
   background-position: center;
   min-height: 190vh;      /* keeps scrolling space */
   position: relative;      /* REQUIRED for absolute children */
-  padding: 100px;          /* breathing room from edges */
+  padding: 200px 200px;          /* breathing room from edges */
 }
 
 /* Bottom-left email */
@@ -1033,6 +1033,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
