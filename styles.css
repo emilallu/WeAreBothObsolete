@@ -378,15 +378,16 @@ main.home {
 
 .bottom-email {
   position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  left: 40px;     /* breathing room from left edge */
-  width: auto;   /* increased from 350px to 450px */
+  bottom: 40px;
+  left: 40px;
+  width: 450px; /* container width = desired image size */
   z-index: 3;
 }
 
 .bottom-email img {
-  width: 100%;   /* fills container */
-  height: auto;
+  width: 100%;   /* fills the container */
+  height: auto;  /* maintain aspect ratio */
+  display: block; /* avoids inline spacing issues */
 }
 
 /* Bottom-middle / shifted-right address */
@@ -1034,6 +1035,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
