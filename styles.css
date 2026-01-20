@@ -380,7 +380,7 @@ main.home {
 /* PHONE LABEL */
 .phone {
   position: absolute;
-  top: 260px;
+  top: 540px;
   right: 300px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
@@ -392,7 +392,7 @@ main.home {
 /* PHONE NUMBER */
 .number {
   position: absolute;
-  top: 340px;
+  top: 640px;
   right: 300px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
@@ -405,7 +405,7 @@ main.home {
 /* ADDRESS LABEL */
 .address {
   position: absolute;
-  top: 480px;
+  top: 680px;
   left: 300px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
@@ -417,8 +417,8 @@ main.home {
 /* ADDRESS TEXT */
 .address-info {
   position: absolute;
-  top: 560px;
-  left: 300px;
+  top: 760px;
+  left: 600px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
   font-size: 50px;
@@ -432,7 +432,7 @@ main.home {
 .email {
   position: absolute;
   bottom: 200px;
-  right: 300px;
+  right: 600px;
   z-index: 3;
   width: 700px;
 }
@@ -1030,5 +1030,6 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
