@@ -404,11 +404,11 @@ main.home {
   height: auto;
 }
 
-/* Bottom-middle / shifted-left address */
+/* Bottom-middle / shifted-right address */
 .bottom-address {
   position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  left: 30%;      /* shift block more toward left */
+  bottom: 40px;   /* still hugging bottom */
+  left: 55%;      /* shift more to the right now */
   width: 500px;   /* container width */
   z-index: 3;
   text-align: left; /* ensures label + text align left */
@@ -433,10 +433,10 @@ main.home {
   text-align: left;  /* left-aligned text */
 }
 
-/* Bottom-right phone, moved way higher */
+/* Bottom-right phone, moved higher */
 .bottom-phone {
   position: absolute;
-  bottom: 500px;   /* moves phone much higher from bottom */
+  bottom: 650px;   /* moved even higher from bottom */
   right: 40px;     /* breathing room from right edge */
   width: 350px;    /* container width */
   text-align: left; /* label + number align left */
@@ -1049,6 +1049,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
