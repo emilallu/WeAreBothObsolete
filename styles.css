@@ -371,7 +371,7 @@ main.home {
 .page-contact main.contact {
   position: relative;
   min-height: 190vh; /* scrolling space */
-  padding: 100px 100px; /* reduce so edges don’t feel tight */
+  padding: 100px; /* reduce so edges don’t feel tight */
 }
 
 /* Email - bottom-left */
@@ -1030,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
