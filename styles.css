@@ -178,7 +178,7 @@ main.home {
   position: absolute;   /* absolute inside overlay */
   bottom: 0px;        /* push lower than page */
   left: 0px;          /* hug right side */
-  width: 100%;           /* scales larger */
+  width: 180%;           /* scales larger */
   height: auto;         /* maintain aspect ratio */
 }
 
@@ -385,7 +385,7 @@ main.home {
 }
 
 .bottom-email img {
-  width: 250%;   /* fills container */
+  width: 150%;   /* fills container */
   height: auto;
 }
 
@@ -1034,6 +1034,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
