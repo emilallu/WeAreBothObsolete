@@ -423,10 +423,10 @@ main.home {
 /* Bottom-right phone */
 .bottom-phone {
   position: absolute;
-  bottom: 80px;   /* slightly above bottom */
-  right: 40px;    /* breathing room from edge */
-  width: 350px;   /* prevent collapse */
-  text-align: right;
+  bottom: 140px;    /* move up by ~60px (was 80px) */
+  right: 40px;      /* breathing room from right edge */
+  width: 350px;     /* container width */
+  text-align: left; /* align label + number to left inside container */
   z-index: 3;
 }
 
@@ -435,7 +435,8 @@ main.home {
   font-size: 60px;
   font-weight: 700;
   color: #f8f8f8;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* spacing between label and number */
+  text-align: left;     /* ensures left alignment inside container */
 }
 
 .number {
@@ -444,6 +445,7 @@ main.home {
   font-weight: 300;
   color: #f8f8f8;
   white-space: nowrap;
+  text-align: left;    /* aligns with label */
 }
 
 /* =========================
@@ -1034,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
