@@ -380,7 +380,7 @@ main.home {
 /* PHONE LABEL */
 .phone {
   position: absolute;
-  top: 540px;
+  top: 140px;
   right: 300px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
@@ -392,7 +392,7 @@ main.home {
 /* PHONE NUMBER */
 .number {
   position: absolute;
-  top: 640px;
+  top: 40px;
   right: 300px;
   z-index: 3;
   font-family: "Inter Display", sans-serif;
@@ -1030,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
