@@ -173,7 +173,7 @@ main.home {
   pointer-events: none;
   z-index: -1;
   background-image: url("hometrash.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 .logo {
@@ -1029,6 +1029,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
