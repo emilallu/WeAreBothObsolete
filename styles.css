@@ -1,0 +1,1036 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GLOBAL FONT ===== */
+body {
+  font-family: 'Inter Display', sans-serif;
+}
+
+/* Mini logo top-right */
+.mini-logo {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1002;
+}
+
+.mini-logo img {
+  width: 100px;              /* adjust size */
+  height: auto;             /* keep aspect ratio */
+  display: block;
+}
+
+/* ===== ERROR PAGE ONLY ===== */
+.error-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0A7A00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-text {
+  color: #F8F8F8;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 133%;
+  margin-bottom: 80px;
+}
+
+.undo-button {
+  width: 280px;
+  height: 71.629px;
+  border-radius: 10px;
+  border: 4px solid #0000C5;
+  background: transparent;
+  color: #0000C5;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 133%;
+  cursor: pointer;
+
+  /* added so link behaves like button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.undo-button:hover {
+  background-color: rgba(0, 0, 197, 0.1);
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+}
+
+.tab-cover {
+  position: fixed;
+  top: 90px;          
+  left: 0;
+  width: 100vw;
+  height: 20px;        
+  background-color: #0000C5; 
+  z-index: 1001;       
+}
+main.info {
+  position: relative;
+}
+
+
+/* NAV CONTAINER: fixed, always visible */
+.nav-container {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  display: flex;
+  justify-content: flex-start; /* stick to the left */
+  z-index: 1000;
+  padding-left: 50px;          /* adjust horizontal offset from edge */
+  pointer-events: auto;
+}
+
+/* NAV BAR */
+.nav-bar {
+  display: flex;
+  gap: 0;                        /* overlap handled in nav-item */
+}
+
+/* NAV ITEM / TAB */
+.nav-item {
+  position: relative;
+  margin-left: -10px;            /* overlap like Chrome tabs */
+  z-index: 1;
+}
+
+.nav-item.active {
+  z-index: 8;
+}
+
+.nav-item img {
+  height: 60px;                  /* adjust size */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-item:hover img {
+  transform: translateY(-4px);
+}
+
+.nav-item.active img {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.tab-strip {
+  position: fixed;
+  top: 0px;            /* match nav-bar top */
+  left: 0;
+  width: 100vw;         /* full screen width */
+  height: 100px;         /* design height */
+  background-color: #c4c4c4; /* grey */
+  z-index: 1000;           /* behind tabs */
+}
+
+.page-info .tab-cover,
+.page-contact .tab-cover {
+  background-color: #000000;
+}
+
+main.home {
+  position: relative;
+  width: 100%;
+  min-height: 320vh;      /* makes it scrollable (twice the viewport height) */
+  background-color: #0000c5;  /* your long blue background */
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  justify-content: flex-start; /* start from top */
+  align-items: flex-end;    /* hug right side */
+  position: relative;
+  padding: 50px;            /* optional spacing from edges */
+  box-sizing: border-box;
+}
+
+.trash-overlay {
+  position: absolute;   /* overlay on top of background */
+  top: 0;
+  left: 0;
+  width: 100%;          /* spans full width of parent */
+  height: 100%;         /* spans full height of parent */
+  pointer-events: none; /* clicks pass through */
+  z-index: 1;           /* behind main text */
+}
+
+.trash-overlay img {
+  position: absolute;   /* absolute inside overlay */
+  bottom: 0px;        /* push lower than page */
+  left: 0px;          /* hug right side */
+  width: 100%;           /* scales larger */
+  height: auto;         /* maintain aspect ratio */
+}
+
+.logo {
+  position: absolute;   /* position freely inside main */
+  top: 230px;            /* distance from top of page */
+  left: 400px;          /* move horizontally from left edge */
+  z-index: 3;           /* above overlay */
+  width: auto;          /* container width is not needed */
+}
+
+.logo img {
+  width: 1700px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+/* Container for mini logos */
+.mini-logos {
+  position: absolute;  /* free positioning */
+  top: 170px;           /* distance from top */
+  right: 90px;         /* distance from right edge */
+  z-index: 3;          /* above overlay */
+  width: auto;
+}
+
+/* Mini logos image */
+.mini-logos img {
+  width: 200px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+.home-text {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 70px;
+  margin-top: 1400px;
+  padding: 100px;
+  background-color: #0000C5;
+}
+
+.home-dates {
+  width: 1000px;
+  color: #f8f8f8;
+  text-align: right;
+  font-family: "Inter Display", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%;
+}
+
+/* =========================
+   TYPEWRITER ANIMATION
+   ========================= */
+.typewriter {
+  overflow: hidden; /* hide text until it types */
+  border-right: 2px solid #FAFAFA; /* cursor */
+  white-space: nowrap; /* keep text on one line */
+  width: 0;
+  animation: typing 8s steps(25, end) infinite, blink 1s step-end infinite;
+}
+
+/* Typing and deleting loop */
+@keyframes typing {
+  0%, 10% { width: 0; }          /* start hidden */
+  40%, 60% { width: 1000px; }     /* fully typed */
+  90%, 100% { width: 0; }        /* deleted */
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* HEADLINE TYPEWRITER */
+.home-headline.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #FAFAFA; /* cursor */
+  white-space: nowrap;
+  width: 0;
+  animation: typingHeadline 8s steps(20, end) 2s infinite, blink 1s step-end infinite 4s;
+}
+
+/* Typing and deleting loop for headline */
+@keyframes typingHeadline {
+  0%, 10% { width: 0; }
+  40%, 60% { width: 490px; }  /* width = headline container width */
+  90%, 100% { width: 0; }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.home-title {
+  width: 1000px;
+  color: #f8f8f8;
+  text-align: right;
+  font-family: "Inter Display", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%;
+}
+
+.home-subtitle {
+  width: 1000px;
+  color: #f8f8f8;
+  text-align: right;
+  font-family: "Inter Display", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%;
+}
+
+/* Container for headline + paragraph */
+.home-obsolete {
+  display: flex;
+  gap: 32px; /* spacing between headline and paragraph */
+  align-items: flex-start; /* top-align the headline with paragraph */
+  margin-top: 32px; /* spacing from previous text blocks */
+}
+
+/* Left column: headline */
+.home-headline {
+  width: 375px;
+  flex-shrink: 0;
+  color: #F8f8f8;
+  font-family: "Inter Display", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%; /* 32px */
+  text-transform: lowercase;
+  text-align: left; /* now aligned left inside its column */
+}
+
+/* Right column: paragraph */
+.home-paragraph {
+  width: 420px;
+  flex-shrink: 0;
+  color: #F8F8F8;
+  font-family: "Inter Display", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 133%; /* 26.6px */
+  text-align: left; /* aligned left */
+}
+
+.bottom-text {
+  display: flex;
+  flex-direction: column;   /* stack words vertically */
+  align-items: flex-start;    /* right-align the stack */
+  justify-content: flex-start; /* push to bottom if using full height container */
+  position: absolute;       /* absolute inside main */
+  bottom: 500px;             /* distance from bottom */
+  left: 80px;              /* distance from edge */
+  z-index: 3;               /* above overlay PNG */
+  font-family: "Inter Display", sans-serif;
+  font-size: 80px;
+  font-weight: 300;
+  color: #f8f8f8;
+  line-height: 1.5;           /* tighten spacing */
+}
+
+/* Container for bottom info */
+.bottom-info {
+  position: absolute;  /* free positioning */
+  bottom: 100px;           /* distance from top */
+  left: 60px;         /* distance from right edge */
+  z-index: 3;          /* above overlay */
+  width: auto;
+}
+
+/* bottom logos image */
+.bottom-info img {
+  width: 800px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+/* Contact page background */
+.contact {
+  position: relative;        /* better than absolute here */
+  width: 100%;
+  padding-top: 200px;        /* 👈 this is your whitespace */
+  background-color: black;   /* or your page colour */
+  padding-bottom: 200px; 
+}
+
+.contact img {
+  width: 100%;
+  height: auto;      /* let height scale naturally */
+  display: block;    /* remove default inline spacing */
+}
+
+.email {
+  position: absolute;
+  bottom: -1000px;  /* independent positioning */
+  left: -1800px;
+  z-index: 3;
+  width: 700px;   /* scale as needed */
+}
+
+.email img {
+  width: 100%;
+  height: auto;
+}
+.phone {
+  position: absolute;
+  bottom: 1500px;
+  right: 400px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f8f8;
+  line-height: 1.5;
+}
+
+/* Bottom line number */
+.number {
+  position: absolute;
+  bottom: -70px;
+  left: 0px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  white-space: nowrap;
+}
+
+.address {
+  position: absolute;
+  bottom: -600px;
+  left: -600px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f8f8;
+  white-space: nowrap;
+}
+
+.address-info {
+  position: absolute;
+  bottom: -980px;
+  left: -600px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  line-height: 1.5;
+
+  white-space: pre; /* preserve line breaks exactly */
+}
+
+/* =========================
+   INFO PAGE BASE
+   ========================= */
+
+main.info {
+  position: relative;
+  width: 100%;
+  min-height: 8025px;
+  background-color: #000;
+}
+
+.info-content {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 300px; /* START near top, not bottom */
+}
+
+.bottom-info-text {
+  display: flex;
+  flex-direction: column;   /* stack words vertically */
+  align-items: flex-start;    /* right-align the stack */
+  justify-content: flex-start; /* push to bottom if using full height container */
+  position: absolute;       /* absolute inside main */
+  bottom: 4420px;             /* distance from bottom */
+  left: 850px;              /* distance from edge */
+  z-index: 3;               /* above overlay PNG */
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  color: #f8f8f8;
+  line-height: 1.5;           /* tighten spacing */
+}
+
+/* Opening Hours Outer Box */
+.box-outer.hours-box {
+  position: relative;       /* relative to page */
+  top: -60px;               /* adjust so Box 2 overlaps it */
+  left: 30%;
+  transform: translateX(-50%);
+  width: 728px;
+  height: 420px;
+  border: 4px solid #F8F8F8;
+  border-radius: 10px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;               /* behind Box 2 */
+}
+
+/* Inner box (content) */
+.box-inner.hours-inner {
+  width: 681px;
+  height: 356px;
+  border: 4px solid #F8F8F8;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+/* Headline */
+.hours-headline {
+  width: 189px;
+  color: #FFF;
+  font-family: "Inter Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 133%;
+  margin-bottom: 20px;
+}
+
+.wintersummer {
+  position: absolute;       /* relative to Box 2 */
+  bottom: 4500px;             /* distance from bottom of Box 2 */
+  right: 710px;              /* distance from right */
+  width: 390px;              /* adjust size */
+  height: auto;
+  z-index: 10;              /* on top of Box 2 content */
+  pointer-events: none;
+}
+
+.box-1 {
+  position: relative;
+  width: 944px;
+  height: 1016px;
+  border: 4px solid #F8F8F8;
+  border-radius: 10px;
+  background: #000;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+/* Make Box 2 relative so absolute positioning works inside it */
+/* Description Box (Box 2) */
+/* Box 2 (Description) */
+.box-2 {
+  position: relative;       /* parent for cursor */
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 882px;
+  border: 4px solid #F8F8F8;
+  border-radius: 10px;
+  background: #000;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+/* Cursor PNG inside Box 2 */
+.cursor-overlay {
+  position: absolute;       /* relative to Box 2 */
+  bottom: -200px;             /* distance from bottom of Box 2 */
+  right: -60px;              /* distance from right */
+  width: 270px;              /* adjust size */
+  height: auto;
+  z-index: 10;              /* on top of Box 2 content */
+  pointer-events: none;
+  animation: rotateCursor 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotateCursor {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+.box-header {
+  position: absolute;
+  top: -75px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  font-family: "Inter Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.box-close {
+  font-family: "Inter Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.typewriter {
+  overflow: hidden;             /* hide text outside container */
+  white-space: nowrap;           /* keep text on one line */
+  border-right: 4px solid #FFF; /* cursor effect */
+  width: 0;                      /* start hidden */
+  animation: typingloop 4s steps(11, end) infinite; /* loop animation */
+}
+
+/* Keyframes for typing + deleting loop */
+@keyframes typingloop {
+  0%, 10% { width: 0; }        /* start hidden */
+  40%, 60% { width: 8.5ch; }    /* fully typed */
+  90%, 100% { width: 0; }      /* back to hidden */
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: #FFF; }
+}
+
+/* Headline stays left-aligned */
+.info-headline {
+  color: #F8F8F8;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Paragraphs centered in the box but left-aligned text */
+.info-text {
+  max-width: 752px;         /* keeps line length readable */
+  margin: 0 auto 24px auto; /* horizontally center inside box, spacing below */
+  color: #008000;
+  font-family: "Inter Display", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 133%;
+  text-align: left;         /* text itself stays left-aligned */
+}
+
+/* Headline */
+.info-headline {
+  color: #F8F8F8;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;     /* spacing below headline */
+  text-align: left;
+}
+
+/* Paragraphs */
+.info-text {
+  max-width: 752px;
+  margin: 0 auto 24px auto; /* center horizontally, spacing below each paragraph */
+  font-family: "Inter Display", sans-serif;
+  font-size: 21px;
+  line-height: 133%;
+  text-align: left;
+}
+
+/* Description text: bold green */
+.info-text:not(.location-text):not(.dates-text) {
+  color: #008000;
+  font-weight: 400;
+}
+
+/* Location and Dates text: lighter green */
+.location-text,
+.dates-text {
+  color: #008000;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.info-title { /* map of objects*/
+  position: absolute;
+  top: 6500px;            /* matches your Figma placement */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Inter Display", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 2;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateX(-50%) translateY(0); }
+  50%  { transform: translateX(-50%) translateY(-12px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+.info-divider {
+  width: 1400px;
+  height: 3px;
+  background: #F8F8F8;
+  margin: 120px auto 0 auto; /* spacing above, centered */
+  z-index: 3;
+}
+
+/* =========================
+   OBJECTS BOX
+   ========================= */
+
+.objects-box {
+  position: relative;
+  width: 944px;
+  padding: 23px 26px;
+  margin: 200px auto 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+
+  border-radius: 10px;
+  border: 4px solid #F8F8F8;
+  background: #000;
+  z-index: 3;
+}
+
+/* Header row */
+.objects-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title + X */
+.objects-title,
+.objects-close {
+  color: #FFF;
+  font-family: "Inter Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+.objects-close {
+  cursor: pointer;
+}
+
+/* Content wrapper */
+.objects-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Blue square */
+.objects-blue-square {
+  width: 1000px;              /* adjust if needed */
+  height: 800px;
+  background-color: #0000C5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+}
+
+/* Objects image */
+.objects-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* =========================
+   OBJECTS ALL IMAGE
+   ========================= */
+
+.objects-all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 120px; /* space below objects box */
+}
+
+.objects-all img {
+  max-width: 1440px;  /* fits your page width */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.divider-line {
+  width: 1400px;
+  height: 3px;
+  background-color: #F8F8F8;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 200px;
+}
+
+.object-map {
+  position: absolute;   /* position freely inside main */
+  top: 6600px;            /* distance from top of page */
+  right: 450px;          /* move horizontally from left edge */
+  z-index: 3;           /* above overlay */
+  width: auto;          /* container width is not needed */
+}
+
+.object-map img {
+  width: 600px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+.bottom-logo {
+  position: absolute;   /* position freely inside main */
+  top: 1080px;            /* distance from top of page */
+  left: -900px;          /* move horizontally from left edge */
+  z-index: 5;           /* above overlay */
+  width: auto;          /* container width is not needed */
+}
+
+.bottom-logo img {
+  width: 400px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+.info-two {
+  position: absolute;   /* position freely inside main */
+  top: 1080px;            /* distance from top of page */
+  left: 1000px;          /* move horizontally from left edge */
+  z-index: 5;           /* above overlay */
+  width: auto;          /* container width is not needed */
+}
+
+.info-two img {
+  width: 600px;        /* adjust size */
+  height: auto;
+  display: block;
+}
+
+/* Container for vertical layout (stacked) */
+.ticket-buttons {
+  position: absolute;       /* overlay on PNG */
+  left: 50%;                /* center horizontally */
+  bottom: -400px;             /* distance from bottom of page */
+  transform: translateX(-150%); /* actually center horizontally */
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  gap: 40px;                /* spacing between buttons */
+  z-index: 200;             /* above PNG */
+}
+
+.ticket-btn {
+  width: 400px;             /* default for Adult/Child */
+  min-width: 300px;
+  height: 130px;
+  border-radius: 20px;
+  border: 7px solid #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;  /* no white background */
+  color: #F8F8F8;                /* text color */
+  font-family: "Inter Display", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 53.2px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+  outline: none;
+}
+
+/* Student button wider */
+.student-btn {
+  width: 320px;             /* adjust until it fits the text nicely */
+}
+
+/* Text inside button */
+.ticket-btn span {
+  width: auto;              /* allow text to scale */
+  text-align: center;
+  color: #F8F8F8;
+  font-family: "Inter Display", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 53.2px;
+}
+
+/* Hover effect */
+.ticket-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Quantity container */
+.ticket-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter Display", sans-serif;
+  font-size: 32px;
+  color: #f8f8f8;
+  width: 150px;
+  justify-content: flex-end;
+}
+
+/* Number display */
+.qty-number {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Plus and minus buttons */
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 2px solid #f8f8f8;
+  background-color: transparent;
+  color: #f8f8f8;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.qty-btn:hover {
+  background-color:#F8F8F8 ;
+  transform: translateY(-2px);
+}
+
+.tickets img {
+  width: 100%;       /* scale width automatically */
+  height: auto;      /* scale height proportionally */
+  display: block;
+  margin: 0;    /* center horizontally */
+}
+
+.ticket-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* button left, quantity right */
+  gap: 540px; /* space between button and quantity */
+  width: 310px; /* adjust width as needed */
+}
+
+.ticket-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter Display", sans-serif;
+  font-size: 65px;
+  color: #f8f8f8;
+}
+
+/* Staircase container spans the whole page */
+.staircase-buttons {
+  position: absolute;   /* absolutely position relative to the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;        /* full page height */
+  z-index: 100;         /* above the PNG but below nav bars */
+}
+
+/* Base button styling */
+.action-btn {
+  position: absolute;   /* position each button independently */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Inter Display", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 133%;
+  border-radius: 20px;
+  border: 6px solid;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button 1: top-left */
+.date-btn {
+  top: 1790px;       /* distance from top of page */
+  left: 800px;      /* distance from left edge */
+  width: 440px;
+  height: 200px;
+  color: #0844C3;
+  border-color: #0844C3;
+}
+
+/* Button 2: bottom-right */
+.checkout-btn {
+  bottom: -1000px;     /* distance from bottom */
+  right: 700px;      /* distance from right edge */
+  width: 420px;
+  height: 220px;
+  color: #F8F8F8;
+  border-color: #F8F8F8;
+}
+
+/* Hover effect */
+.action-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Custom cursor */
+body, button, a, input {
+  cursor: url('images/cursor.png') 16 16, auto;
+}
+

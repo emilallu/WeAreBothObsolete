@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tickets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-tickets">
+
+<!-- Mini logo on top right -->
+<div class="mini-logo">
+  <img src="logohome.png" alt="Mini Logo">
+</div>
+
+  <!-- TAB STRIP BACKGROUND -->
+  <div class="tab-strip"></div>
+
+ <!-- TICKET SECTION -->
+<div class="ticket-buttons">
+
+  <!-- Adult -->
+  <div class="ticket-row">
+    <button class="ticket-btn"><span>Adult</span></button>
+    <div class="ticket-quantity">
+      <button type="button" class="qty-btn minus">−</button>
+      <span class="qty-number">2</span>
+      <button type="button" class="qty-btn plus">+</button>
+    </div>
+  </div>
+
+  <!-- Child -->
+  <div class="ticket-row">
+    <button class="ticket-btn"><span>Child</span></button>
+    <div class="ticket-quantity">
+      <button type="button" class="qty-btn minus">−</button>
+      <span class="qty-number">2</span>
+      <button type="button" class="qty-btn plus">+</button>
+    </div>
+  </div>
+
+  <!-- Student -->
+  <div class="ticket-row">
+    <button class="ticket-btn student-btn"><span>Student</span></button>
+    <div class="ticket-quantity">
+      <button type="button" class="qty-btn minus">−</button>
+      <span class="qty-number">0</span>
+      <button type="button" class="qty-btn plus">+</button>
+    </div>
+  </div>
+
+</div>
+
+ <!-- NAVIGATION CONTAINER -->
+<div class="nav-container">
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-item">
+      <img src="nav-home.png" alt="Home">
+    </a>
+    <a href="info.html" class="nav-item">
+      <img src="nav-info.png" alt="Info">
+    </a>
+    <a href="tickets.html" class="nav-item active">
+      <img src="nav-tickets.png" alt="Tickets">
+    </a>
+    <a href="contact.html" class="nav-item">
+      <img src="nav-contact.png" alt="Contact">
+    </a>
+  </nav>
+</div>
+
+  <!-- BLUE COVER BAR -->
+  <div class="tab-cover"></div>
+
+  <!-- TICKETS PAGE BACKGROUND -->
+  <main class="tickets">
+    <img
+      src="tickets.png"
+      alt="Tickets Page Background"
+      class="tickets"
+    >
+  </main>
+
+<!-- Container spans the whole page -->
+<div class="staircase-buttons">
+
+  <!-- Top-left button -->
+  <a href="error.html" class="action-btn date-btn">Choose Date & Time</a>
+
+  <!-- Bottom-right button -->
+  <a href="error.html" class="action-btn checkout-btn">Proceed to Checkout</a>
+
+</div>
+
+<script>
+  const ticketRows = document.querySelectorAll('.ticket-row');
+
+  ticketRows.forEach(row => {
+    const minusBtn = row.querySelector('.qty-btn.minus');
+    const plusBtn = row.querySelector('.qty-btn.plus');
+    const numberDisplay = row.querySelector('.qty-number');
+
+    // Decrease quantity
+    minusBtn.addEventListener('click', () => {
+      let current = parseInt(numberDisplay.textContent);
+      if (current > 0) {
+        numberDisplay.textContent = current - 1;
+      }
+    });
+
+    // Increase quantity
+    plusBtn.addEventListener('click', () => {
+      let current = parseInt(numberDisplay.textContent);
+      numberDisplay.textContent = current + 1;
+    });
+  });
+</script>
+
+
+</body>
+</html>
