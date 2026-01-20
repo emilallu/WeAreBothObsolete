@@ -390,23 +390,24 @@ main.home {
   height: auto;
 }
 
-/* Bottom-middle address */
+/* Bottom-middle / shifted-right address */
 .bottom-address {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%); /* center container */
-  width: 500px;                /* container width to prevent collapse */
+  bottom: 40px;   /* breathing room from bottom */
+  left: 65%;      /* moves the whole block to the right; tweak % as needed */
+  width: 500px;   /* container width */
   z-index: 3;
+  text-align: left; /* ensures everything inside aligns left */
 }
 
+/* Label aligned with text */
 .address-label {
   font-family: "Inter Display", sans-serif;
   font-size: 60px;
   font-weight: 700;
   color: #f8f8f8;
   margin-bottom: 10px;
-  text-align: center;  /* label above info can be centered */
+  text-align: left;  /* aligned with the text */
 }
 
 .address-info {
@@ -416,7 +417,7 @@ main.home {
   color: #f8f8f8;
   line-height: 1.5;
   white-space: pre;
-  text-align: left;  /* left-aligned inside box */
+  text-align: left;  /* stacks text starting at left edge of container */
 }
 
 /* Bottom-right phone */
@@ -1033,6 +1034,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
