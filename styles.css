@@ -367,82 +367,79 @@ main.home {
   display: block;
 }
 
-/* Contact page background */
-.contact {
-  position: relative;        /* better than absolute here */
-  width: 100%;
-  padding-top: 200px;        /* 👈 this is your whitespace */
-  background-color: black;   /* or your page colour */
-  padding-bottom: 200px; 
+/* CONTACT PAGE BACKGROUND */
+.page-contact main.contact {
+  background-image: url("contact.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 160vh; /* allows scrolling for positioned content */
+  position: relative;
+  padding: 200px 200px;
 }
 
-.contact img {
-  width: 100%;
-  height: auto;      /* let height scale naturally */
-  display: block;    /* remove default inline spacing */
+/* PHONE LABEL */
+.phone {
+  position: absolute;
+  top: 260px;
+  right: 300px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f8f8;
 }
 
+/* PHONE NUMBER */
+.number {
+  position: absolute;
+  top: 340px;
+  right: 300px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  white-space: nowrap;
+}
+
+/* ADDRESS LABEL */
+.address {
+  position: absolute;
+  top: 480px;
+  left: 300px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+/* ADDRESS TEXT */
+.address-info {
+  position: absolute;
+  top: 560px;
+  left: 300px;
+  z-index: 3;
+  font-family: "Inter Display", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #f8f8f8;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+/* EMAIL IMAGE */
 .email {
   position: absolute;
-  bottom: -1000px;  /* independent positioning */
-  left: -1800px;
+  bottom: 200px;
+  right: 300px;
   z-index: 3;
-  width: 700px;   /* scale as needed */
+  width: 700px;
 }
 
 .email img {
   width: 100%;
   height: auto;
-}
-.phone {
-  position: absolute;
-  bottom: 1500px;
-  right: 400px;
-  z-index: 3;
-  font-family: "Inter Display", sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  color: #f8f8f8;
-  line-height: 1.5;
-}
-
-/* Bottom line number */
-.number {
-  position: absolute;
-  bottom: -70px;
-  left: 0px;
-  z-index: 3;
-  font-family: "Inter Display", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  color: #f8f8f8;
-  white-space: nowrap;
-}
-
-.address {
-  position: absolute;
-  bottom: -600px;
-  left: -600px;
-  z-index: 3;
-  font-family: "Inter Display", sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  color: #f8f8f8;
-  white-space: nowrap;
-}
-
-.address-info {
-  position: absolute;
-  bottom: -980px;
-  left: -600px;
-  z-index: 3;
-  font-family: "Inter Display", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  color: #f8f8f8;
-  line-height: 1.5;
-
-  white-space: pre; /* preserve line breaks exactly */
 }
 
 /* =========================
@@ -1033,4 +1030,5 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
