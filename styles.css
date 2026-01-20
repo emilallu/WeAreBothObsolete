@@ -169,12 +169,11 @@ main.home {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* full viewport height */
   pointer-events: none;
   z-index: 1;
   background-image: url("hometrash.png");
-  background-size: cover;       /* or cover if you want it to fill */
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
@@ -1030,6 +1029,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
