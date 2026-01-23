@@ -842,15 +842,14 @@ main.info {
 }
 
 .info-two {
-  position: absolute;   /* position freely inside main */
-  top: 1080px;            /* distance from top of page */
-  left: 1000px;          /* move horizontally from left edge */
-  z-index: 5;           /* above overlay */
-  width: auto;          /* container width is not needed */
+  position: absolute;
+  bottom: 40px;   /* breathing room from bottom */
+  right: 40px;    /* breathing room from right */
+  z-index: 5;
 }
 
 .info-two img {
-  width: 600px;        /* adjust size */
+  width: 600px;
   height: auto;
   display: block;
 }
@@ -1034,6 +1033,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
