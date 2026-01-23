@@ -829,15 +829,14 @@ main.info {
 }
 
 .bottom-logo {
-  position: absolute;   /* position freely inside main */
-  top: 1080px;            /* distance from top of page */
-  left: -900px;          /* move horizontally from left edge */
-  z-index: 5;           /* above overlay */
-  width: auto;          /* container width is not needed */
+  position: absolute;
+  bottom: 40px;   /* breathing room from bottom */
+  left: 40px;     /* breathing room from left */
+  z-index: 5;
 }
 
 .bottom-logo img {
-  width: 400px;        /* adjust size */
+  width: 400px;
   height: auto;
   display: block;
 }
@@ -1035,5 +1034,6 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
