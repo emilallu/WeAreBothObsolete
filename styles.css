@@ -178,7 +178,7 @@ main.home {
   position: absolute;   /* absolute inside overlay */
   bottom: 0px;        /* push lower than page */
   left: 0px;          /* hug right side */
-  width: 130%;           /* scales larger */
+  width: 100%;           /* scales larger */
   height: auto;         /* maintain aspect ratio */
 }
 
@@ -191,7 +191,7 @@ main.home {
 }
 
 .logo img {
-  width: 800px;        /* adjust size */
+  width: 1400px;        /* adjust size */
   height: auto;
   display: block;
 }
@@ -207,7 +207,7 @@ main.home {
 
 /* Mini logos image */
 .mini-logos img {
-  width: 100px;        /* adjust size */
+  width: 200px;        /* adjust size */
   height: auto;
   display: block;
 }
@@ -228,7 +228,7 @@ main.home {
   color: #f8f8f8;
   text-align: right;
   font-family: "Inter Display", sans-serif;
-  font-size: 50px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
@@ -283,7 +283,7 @@ main.home {
   color: #f8f8f8;
   text-align: right;
   font-family: "Inter Display", sans-serif;
-  font-size: 50px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
@@ -294,7 +294,7 @@ main.home {
   color: #f8f8f8;
   text-align: right;
   font-family: "Inter Display", sans-serif;
-  font-size: 20px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
@@ -314,7 +314,7 @@ main.home {
   flex-shrink: 0;
   color: #F8f8f8;
   font-family: "Inter Display", sans-serif;
-  font-size: 30px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 500;
   line-height: 80%; /* 32px */
@@ -328,7 +328,7 @@ main.home {
   flex-shrink: 0;
   color: #F8F8F8;
   font-family: "Inter Display", sans-serif;
-  font-size: 15px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 300;
   line-height: 133%; /* 26.6px */
@@ -345,7 +345,7 @@ main.home {
   left: 80px;              /* distance from edge */
   z-index: 3;               /* above overlay PNG */
   font-family: "Inter Display", sans-serif;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 300;
   color: #f8f8f8;
   line-height: 1.5;           /* tighten spacing */
@@ -362,7 +362,7 @@ main.home {
 
 /* bottom logos image */
 .bottom-info img {
-  width: 400px;        /* adjust size */
+  width: 800px;        /* adjust size */
   height: auto;
   display: block;
 }
@@ -1035,47 +1035,4 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
