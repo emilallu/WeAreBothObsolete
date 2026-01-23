@@ -283,7 +283,7 @@ main.home {
   color: #f8f8f8;
   text-align: right;
   font-family: "Inter Display", sans-serif;
-  font-size: 100px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
@@ -294,7 +294,7 @@ main.home {
   color: #f8f8f8;
   text-align: right;
   font-family: "Inter Display", sans-serif;
-  font-size: 80px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 109%;
@@ -314,7 +314,7 @@ main.home {
   flex-shrink: 0;
   color: #F8f8f8;
   font-family: "Inter Display", sans-serif;
-  font-size: 80px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 80%; /* 32px */
@@ -328,7 +328,7 @@ main.home {
   flex-shrink: 0;
   color: #F8F8F8;
   font-family: "Inter Display", sans-serif;
-  font-size: 35px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: 133%; /* 26.6px */
@@ -345,7 +345,7 @@ main.home {
   left: 80px;              /* distance from edge */
   z-index: 3;               /* above overlay PNG */
   font-family: "Inter Display", sans-serif;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 300;
   color: #f8f8f8;
   line-height: 1.5;           /* tighten spacing */
@@ -362,7 +362,7 @@ main.home {
 
 /* bottom logos image */
 .bottom-info img {
-  width: 800px;        /* adjust size */
+  width: 400px;        /* adjust size */
   height: auto;
   display: block;
 }
@@ -1035,6 +1035,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
