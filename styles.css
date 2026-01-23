@@ -831,9 +831,10 @@ main.info {
 
 .bottom-logo {
   position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  left: 40px;     /* breathing room from left */
+  top: 1080px;
+  left: -900px;     /* breathing room from left */
   z-index: 5;
+  width: auto;
 }
 
 .bottom-logo img {
@@ -844,9 +845,10 @@ main.info {
 
 .info-two {
   position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  right: 40px;    /* breathing room from right */
+  top: 1080px;
+  left: 1000px;
   z-index: 5;
+  width:auto;
 }
 
 .info-two img {
@@ -1034,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
