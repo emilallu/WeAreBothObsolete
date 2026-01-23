@@ -183,15 +183,15 @@ main.home {
 }
 
 .logo {
-  position: absolute;   /* position freely inside main */
-  top: 230px;            /* distance from top of page */
-  left: 400px;          /* move horizontally from left edge */
-  z-index: 3;           /* above overlay */
-  width: auto;          /* container width is not needed */
+  position: absolute;
+  top: 230px;          /* vertical placement stays the same */
+  left: 50%;           /* go to the horizontal center */
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .logo img {
-  width: 1400px;        /* adjust size */
+  width: 1400px;       /* adjust size */
   height: auto;
   display: block;
 }
@@ -1035,4 +1035,5 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
