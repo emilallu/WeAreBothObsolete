@@ -1,3 +1,4 @@
+
 /* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
@@ -828,30 +829,30 @@ main.info {
   display: block;
 }
 
-/* FLEX FOOTER */
-.info-footer {
+.bottom-logo {
   position: absolute;
-  bottom: 40px;              /* breathing space from bottom */
-  left: 40px;
-  right: 40px;
-
-  display: flex;
-  justify-content: space-between; /* left + right */
-  align-items: flex-end;
-
+  bottom: 40px;   /* breathing room from bottom */
+  left: 40px;     /* breathing room from left */
   z-index: 5;
 }
 
-/* LEFT */
 .bottom-logo img {
   width: 400px;
   height: auto;
+  display: block;
 }
 
-/* RIGHT */
+.info-two {
+  position: absolute;
+  bottom: 40px;   /* breathing room from bottom */
+  right: 40px;    /* breathing room from right */
+  z-index: 5;
+}
+
 .info-two img {
   width: 600px;
   height: auto;
+  display: block;
 }
 
 /* Container for vertical layout (stacked) */
@@ -1033,7 +1034,6 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
-
 
 
 
