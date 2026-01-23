@@ -828,30 +828,30 @@ main.info {
   display: block;
 }
 
-.bottom-logo {
+/* FLEX FOOTER */
+.info-footer {
   position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  left: 40px;     /* breathing room from left */
+  bottom: 40px;              /* breathing space from bottom */
+  left: 40px;
+  right: 40px;
+
+  display: flex;
+  justify-content: space-between; /* left + right */
+  align-items: flex-end;
+
   z-index: 5;
 }
 
+/* LEFT */
 .bottom-logo img {
   width: 400px;
   height: auto;
-  display: block;
 }
 
-.info-two {
-  position: absolute;
-  bottom: 40px;   /* breathing room from bottom */
-  right: 40px;    /* breathing room from right */
-  z-index: 5;
-}
-
+/* RIGHT */
 .info-two img {
   width: 600px;
   height: auto;
-  display: block;
 }
 
 /* Container for vertical layout (stacked) */
@@ -1033,6 +1033,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
