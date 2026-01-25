@@ -394,7 +394,7 @@ main.home {
 /* Bottom-middle / shifted-right address */
 .bottom-address {
   position: absolute;
-  bottom: 30px;   /* still hugging bottom */
+  bottom: 15px;   /* still hugging bottom */
   left: 55%;      /* shift more to the right now */
   width: 500px;   /* container width */
   z-index: 3;
@@ -1036,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
