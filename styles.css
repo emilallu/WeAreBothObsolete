@@ -243,7 +243,7 @@ main.home {
   border-right: 2px solid #FAFAFA; /* cursor */
   white-space: nowrap; /* keep text on one line */
   width: 0;
-  animation: typing 8s steps(25, end) infinite, blink 1s step-end infinite;
+  animation: typing 8s steps(40, end) infinite, blink 1s step-end infinite;
 }
 
 /* Typing and deleting loop */
@@ -1036,6 +1036,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
