@@ -20,12 +20,12 @@ body {
 }
 
 .mini-logo img {
-  width: 100px;              /* adjust size */
-  height: auto;             /* keep aspect ratio */
+  width: 100px;         
+  height: auto;             
   display: block;
 }
 
-/* ===== ERROR PAGE ONLY ===== */
+/* ===== ERROR PAGE ===== */
 .error-page {
   width: 100vw;
   height: 100vh;
@@ -57,7 +57,7 @@ body {
   line-height: 133%;
   cursor: pointer;
 
-  /* added so link behaves like button */
+  /* link behaves like button */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,28 +93,28 @@ main.info {
 }
 
 
-/* NAV CONTAINER: fixed, always visible */
+/* NAV CONTAINER */
 .nav-container {
   position: fixed;
   top: 50px;
   left: 0;
   display: flex;
-  justify-content: flex-start; /* stick to the left */
+  justify-content: flex-start; 
   z-index: 1000;
-  padding-left: 50px;          /* adjust horizontal offset from edge */
+  padding-left: 50px;          
   pointer-events: auto;
 }
 
 /* NAV BAR */
 .nav-bar {
   display: flex;
-  gap: 0;                        /* overlap handled in nav-item */
+  gap: 0;                   
 }
 
 /* NAV ITEM / TAB */
 .nav-item {
   position: relative;
-  margin-left: -10px;            /* overlap like Chrome tabs */
+  margin-left: -10px;          
   z-index: 1;
 }
 
@@ -123,7 +123,7 @@ main.info {
 }
 
 .nav-item img {
-  height: 60px;                  /* adjust size */
+  height: 60px;                 
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -138,12 +138,12 @@ main.info {
 
 .tab-strip {
   position: fixed;
-  top: 0px;            /* match nav-bar top */
+  top: 0px;            
   left: 0;
-  width: 100vw;         /* full screen width */
-  height: 100px;         /* design height */
-  background-color: #c0c0c0; /* grey */
-  z-index: 1000;           /* behind tabs */
+  width: 100vw;        
+  height: 100px;       
+  background-color: #c0c0c0; 
+  z-index: 1000;           
 }
 
 .page-info .tab-cover,
@@ -154,61 +154,61 @@ main.info {
 main.home {
   position: relative;
   width: 100%;
-  min-height: 320vh;      /* makes it scrollable (twice the viewport height) */
-  background-color: #0000c5;  /* your long blue background */
+  min-height: 320vh;     
+  background-color: #0000c5;  
   display: flex;
-  flex-direction: column;   /* stack items vertically */
-  justify-content: flex-start; /* start from top */
-  align-items: flex-end;    /* hug right side */
+  flex-direction: column;   
+  justify-content: flex-start; 
+  align-items: flex-end;    
   position: relative;
-  padding: 50px;            /* optional spacing from edges */
+  padding: 50px;            
   box-sizing: border-box;
 }
 
 .trash-overlay {
-  position: absolute;   /* overlay on top of background */
+  position: absolute;  
   top: 0;
   left: 0;
-  width: 100%;          /* spans full width of parent */
-  height: 100%;         /* spans full height of parent */
-  pointer-events: none; /* clicks pass through */
-  z-index: 1;           /* behind main text */
+  width: 100%;          
+  height: 100%;         
+  pointer-events: none; 
+  z-index: 1;          
 }
 
 .trash-overlay img {
-  position: absolute;   /* absolute inside overlay */
-  bottom: 0px;        /* push lower than page */
-  left: 0px;          /* hug right side */
-  width: 100%;           /* scales larger */
-  height: auto;         /* maintain aspect ratio */
+  position: absolute;   
+  bottom: 0px;        
+  left: 0px;          
+  width: 100%;           
+  height: auto;        
 }
 
 .logo {
   position: absolute;
-  top: 230px;          /* vertical placement stays the same */
-  left: 50%;           /* go to the horizontal center */
+  top: 230px;          
+  left: 50%;         
   transform: translateX(-50%);
   z-index: 3;
 }
 
 .logo img {
-  width: 1400px;       /* adjust size */
+  width: 1400px;       
   height: auto;
   display: block;
 }
 
 /* Container for mini logos */
 .mini-logos {
-  position: absolute;  /* free positioning */
-  top: 170px;           /* distance from top */
-  right: 90px;         /* distance from right edge */
-  z-index: 3;          /* above overlay */
+  position: absolute;  
+  top: 170px;           
+  right: 90px;         
+  z-index: 3;          
   width: auto;
 }
 
 /* Mini logos image */
 .mini-logos img {
-  width: 200px;        /* adjust size */
+  width: 200px;        
   height: auto;
   display: block;
 }
@@ -239,18 +239,18 @@ main.home {
    TYPEWRITER ANIMATION
    ========================= */
 .typewriter {
-  overflow: hidden; /* hide text until it types */
-  border-right: 2px solid #FAFAFA; /* cursor */
-  white-space: nowrap; /* keep text on one line */
+  overflow: hidden; 
+  border-right: 2px solid #FAFAFA; 
+  white-space: nowrap; 
   width: 0;
   animation: typing 8s steps(40, end) infinite, blink 1s step-end infinite;
 }
 
 /* Typing and deleting loop */
 @keyframes typing {
-  0%, 10% { width: 0; }          /* start hidden */
-  40%, 60% { width: 1000px; }     /* fully typed */
-  90%, 100% { width: 0; }        /* deleted */
+  0%, 10% { width: 0; }          
+  40%, 60% { width: 1000px; }     
+  90%, 100% { width: 0; }        
 }
 
 /* Cursor blink */
@@ -261,7 +261,7 @@ main.home {
 /* HEADLINE TYPEWRITER */
 .home-headline.typewriter {
   overflow: hidden;
-  border-right: 2px solid #FAFAFA; /* cursor */
+  border-right: 2px solid #FAFAFA; 
   white-space: nowrap;
   width: 0;
   animation: typingHeadline 8s steps(20, end) 2s infinite, blink 1s step-end infinite 4s;
@@ -270,7 +270,7 @@ main.home {
 /* Typing and deleting loop for headline */
 @keyframes typingHeadline {
   0%, 10% { width: 0; }
-  40%, 60% { width: 490px; }  /* width = headline container width */
+  40%, 60% { width: 490px; }  
   90%, 100% { width: 0; }
 }
 
@@ -304,9 +304,9 @@ main.home {
 /* Container for headline + paragraph */
 .home-obsolete {
   display: flex;
-  gap: 32px; /* spacing between headline and paragraph */
-  align-items: flex-start; /* top-align the headline with paragraph */
-  margin-top: 32px; /* spacing from previous text blocks */
+  gap: 32px; 
+  align-items: flex-start; 
+  margin-top: 32px; 
 }
 
 /* Left column: headline */
@@ -320,7 +320,7 @@ main.home {
   font-weight: 500;
   line-height: 80%; /* 32px */
   text-transform: lowercase;
-  text-align: left; /* now aligned left inside its column */
+  text-align: left; 
 }
 
 /* Right column: paragraph */
@@ -333,37 +333,37 @@ main.home {
   font-style: normal;
   font-weight: 300;
   line-height: 133%; /* 26.6px */
-  text-align: left; /* aligned left */
+  text-align: left; 
 }
 
 .bottom-text {
   display: flex;
-  flex-direction: column;   /* stack words vertically */
-  align-items: flex-start;    /* right-align the stack */
-  justify-content: flex-start; /* push to bottom if using full height container */
-  position: absolute;       /* absolute inside main */
-  bottom: 500px;             /* distance from bottom */
-  left: 80px;              /* distance from edge */
-  z-index: 3;               /* above overlay PNG */
+  flex-direction: column;   
+  align-items: flex-start;    
+  justify-content: flex-start; 
+  position: absolute;       
+  bottom: 500px;            
+  left: 80px;             
+  z-index: 3;               
   font-family: "Inter Display", sans-serif;
   font-size: 80px;
   font-weight: 300;
   color: #fafafa;
-  line-height: 1.5;           /* tighten spacing */
+  line-height: 1.5;           
 }
 
 /* Container for bottom info */
 .bottom-info {
-  position: absolute;  /* free positioning */
-  bottom: 100px;           /* distance from top */
-  left: 60px;         /* distance from right edge */
-  z-index: 3;          /* above overlay */
+  position: absolute;  
+  bottom: 100px;          
+  left: 60px;        
+  z-index: 3;         
   width: auto;
 }
 
 /* bottom logos image */
 .bottom-info img {
-  width: 800px;        /* adjust size */
+  width: 800px;        
   height: auto;
   display: block;
 }
@@ -372,33 +372,33 @@ main.home {
   background-image: url("contact.png");
   background-size: cover;
   background-position: center;
-  min-height: 190vh;      /* keeps scrolling space */
-  position: relative;      /* REQUIRED for absolute children */
-  padding: 200px 200px;          /* breathing room from edges */
+  min-height: 190vh;      
+  position: relative;     
+  padding: 200px 200px;         
 }
 
 .bottom-email {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  width: 450px; /* container width = desired image size */
+  width: 450px; 
   z-index: 3;
 }
 
 .bottom-email img {
-  width: 100%;   /* fills the container */
-  height: auto;  /* maintain aspect ratio */
-  display: block; /* avoids inline spacing issues */
+  width: 100%;   
+  height: auto;  
+  display: block; 
 }
 
 /* Bottom-middle / shifted-right address */
 .bottom-address {
   position: absolute;
-  bottom: 5px;   /* still hugging bottom */
-  left: 55%;      /* shift more to the right now */
-  width: 500px;   /* container width */
+  bottom: 5px;   
+  left: 55%;      
+  width: 500px;  
   z-index: 3;
-  text-align: left; /* ensures label + text align left */
+  text-align: left; 
 }
 
 .address-label {
@@ -407,7 +407,7 @@ main.home {
   font-weight: 700;
   color: #fafafa;
   margin-bottom: 10px;  
-  text-align: left;  /* label aligns with text */
+  text-align: left;  
 }
 
 .address-info {
@@ -417,16 +417,16 @@ main.home {
   color: #fafafa;
   line-height: 1.5;
   white-space: pre;
-  text-align: left;  /* left-aligned text */
+  text-align: left;  
 }
 
 /* Bottom-right phone, moved higher */
 .bottom-phone {
   position: absolute;
-  bottom: 850px;   /* moved even higher from bottom */
-  right: 40px;     /* breathing room from right edge */
-  width: 350px;    /* container width */
-  text-align: left; /* label + number align left */
+  bottom: 850px;   
+  right: 40px;     
+  width: 350px;    
+  text-align: left; 
   z-index: 3;
 }
 
@@ -436,7 +436,7 @@ main.home {
   font-weight: 700;
   color: #fafafa;
   margin-bottom: 10px;
-  text-align: left; /* left-aligned label */
+  text-align: left; 
 }
 
 .number {
@@ -445,7 +445,7 @@ main.home {
   font-weight: 300;
   color: #fafafa;
   white-space: nowrap;
-  text-align: left;  /* left-aligned with label */
+  text-align: left;  
 }
 
 /* =========================
@@ -463,29 +463,29 @@ main.info {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 300px; /* START near top, not bottom */
+  padding-top: 300px; 
 }
 
 .bottom-info-text {
   display: flex;
-  flex-direction: column;   /* stack words vertically */
-  align-items: flex-start;    /* right-align the stack */
-  justify-content: flex-start; /* push to bottom if using full height container */
-  position: absolute;       /* absolute inside main */
-  bottom: 4420px;             /* distance from bottom */
-  left: 850px;              /* distance from edge */
-  z-index: 3;               /* above overlay PNG */
+  flex-direction: column;  
+  align-items: flex-start;    
+  justify-content: flex-start; 
+  position: absolute;       
+  bottom: 4420px;             
+  left: 850px;             
+  z-index: 3;              
   font-family: "Inter Display", sans-serif;
   font-size: 60px;
   font-weight: 300;
   color: #fafafa;
-  line-height: 1.5;           /* tighten spacing */
+  line-height: 1.5;           
 }
 
 /* Opening Hours Outer Box */
 .box-outer.hours-box {
-  position: relative;       /* relative to page */
-  top: -60px;               /* adjust so Box 2 overlaps it */
+  position: relative;       
+  top: -60px;               
   left: 30%;
   transform: translateX(-50%);
   width: 728px;
@@ -496,7 +496,7 @@ main.info {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;               /* behind Box 2 */
+  z-index: 1;              
 }
 
 /* Inner box (content) */
@@ -527,12 +527,12 @@ main.info {
 }
 
 .wintersummer {
-  position: absolute;       /* relative to Box 2 */
-  bottom: 4500px;             /* distance from bottom of Box 2 */
-  right: 710px;              /* distance from right */
-  width: 390px;              /* adjust size */
+  position: absolute;       
+  bottom: 4500px;            
+  right: 710px;            
+  width: 390px;              
   height: auto;
-  z-index: 10;              /* on top of Box 2 content */
+  z-index: 10;            
   pointer-events: none;
 }
 
@@ -551,7 +551,7 @@ main.info {
 /* Description Box (Box 2) */
 /* Box 2 (Description) */
 .box-2 {
-  position: relative;       /* parent for cursor */
+  position: relative;     
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
@@ -566,12 +566,12 @@ main.info {
 
 /* Cursor PNG inside Box 2 */
 .cursor-overlay {
-  position: absolute;       /* relative to Box 2 */
-  bottom: -200px;             /* distance from bottom of Box 2 */
-  right: -60px;              /* distance from right */
-  width: 270px;              /* adjust size */
+  position: absolute;     
+  bottom: -200px;            
+  right: -60px;             
+  width: 270px;             
   height: auto;
-  z-index: 10;              /* on top of Box 2 content */
+  z-index: 10;             
   pointer-events: none;
   animation: rotateCursor 2s ease-in-out infinite alternate;
 }
@@ -608,18 +608,18 @@ main.info {
 }
 
 .typewriter {
-  overflow: hidden;             /* hide text outside container */
-  white-space: nowrap;           /* keep text on one line */
-  border-right: 4px solid #fafafa; /* cursor effect */
-  width: 0;                      /* start hidden */
-  animation: typingloop 4s steps(11, end) infinite; /* loop animation */
+  overflow: hidden;            
+  white-space: nowrap;           
+  border-right: 4px solid #fafafa; 
+  width: 0;                   
+  animation: typingloop 4s steps(11, end) infinite; 
 }
 
 /* Keyframes for typing + deleting loop */
 @keyframes typingloop {
-  0%, 10% { width: 0; }        /* start hidden */
-  40%, 60% { width: 8.5ch; }    /* fully typed */
-  90%, 100% { width: 0; }      /* back to hidden */
+  0%, 10% { width: 0; }        
+  40%, 60% { width: 8.5ch; }
+  90%, 100% { width: 0; }    
 }
 
 /* Cursor blink */
@@ -639,16 +639,15 @@ main.info {
   text-align: left;
 }
 
-/* Paragraphs centered in the box but left-aligned text */
 .info-text {
-  max-width: 752px;         /* keeps line length readable */
-  margin: 0 auto 24px auto; /* horizontally center inside box, spacing below */
+  max-width: 752px;         
+  margin: 0 auto 24px auto; 
   color: #008000;
   font-family: "Inter Display", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 133%;
-  text-align: left;         /* text itself stays left-aligned */
+  text-align: left;        
 }
 
 /* Headline */
@@ -658,27 +657,25 @@ main.info {
   font-size: 28px;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 16px;     /* spacing below headline */
+  margin-bottom: 16px;  
   text-align: left;
 }
 
 /* Paragraphs */
 .info-text {
   max-width: 752px;
-  margin: 0 auto 24px auto; /* center horizontally, spacing below each paragraph */
+  margin: 0 auto 24px auto; 
   font-family: "Inter Display", sans-serif;
   font-size: 21px;
   line-height: 133%;
   text-align: left;
 }
 
-/* Description text: bold green */
 .info-text:not(.location-text):not(.dates-text) {
   color: #008000;
   font-weight: 400;
 }
 
-/* Location and Dates text: lighter green */
 .location-text,
 .dates-text {
   color: #008000;
@@ -688,7 +685,7 @@ main.info {
 
 .info-title { /* map of objects*/
   position: absolute;
-  top: 6500px;            /* matches your Figma placement */
+  top: 6500px;            
   left: 50%;
   transform: translateX(-50%);
   font-family: "Inter Display", sans-serif;
@@ -710,7 +707,7 @@ main.info {
   width: 1400px;
   height: 3px;
   background: #fafafa;
-  margin: 120px auto 0 auto; /* spacing above, centered */
+  margin: 120px auto 0 auto; 
   z-index: 3;
 }
 
@@ -766,7 +763,7 @@ main.info {
 
 /* Blue square */
 .objects-blue-square {
-  width: 1000px;              /* adjust if needed */
+  width: 1000px;             
   height: 800px;
   background-color: #0000C5;
 
@@ -793,11 +790,11 @@ main.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 120px; /* space below objects box */
+  margin-top: 120px; 
 }
 
 .objects-all img {
-  max-width: 1440px;  /* fits your page width */
+  max-width: 1440px;  
   width: 100%;
   height: auto;
   display: block;
@@ -816,15 +813,15 @@ main.info {
 }
 
 .object-map {
-  position: absolute;   /* position freely inside main */
-  top: 6600px;            /* distance from top of page */
-  right: 450px;          /* move horizontally from left edge */
-  z-index: 3;           /* above overlay */
-  width: auto;          /* container width is not needed */
+  position: absolute;   
+  top: 6600px;            
+  right: 450px;        
+  z-index: 3;           
+  width: auto;        
 }
 
 .object-map img {
-  width: 600px;        /* adjust size */
+  width: 600px;      
   height: auto;
   display: block;
 }
@@ -832,7 +829,7 @@ main.info {
 .bottom-logo {
   position: absolute;
   top: 1080px;
-  left: -900px;     /* breathing room from left */
+  left: -900px;     
   z-index: 5;
   width: auto;
 }
@@ -857,20 +854,19 @@ main.info {
   display: block;
 }
 
-/* Container for vertical layout (stacked) */
 .ticket-buttons {
-  position: absolute;       /* overlay on PNG */
-  left: 50%;                /* center horizontally */
-  bottom: -400px;             /* distance from bottom of page */
-  transform: translateX(-150%); /* actually center horizontally */
+  position: absolute;      
+  left: 50%;               
+  bottom: -400px;             
+  transform: translateX(-150%); 
   display: flex;
-  flex-direction: column;   /* stack vertically */
-  gap: 40px;                /* spacing between buttons */
-  z-index: 200;             /* above PNG */
+  flex-direction: column;  
+  gap: 40px;                
+  z-index: 200;            
 }
 
 .ticket-btn {
-  width: 400px;             /* default for Adult/Child */
+  width: 400px;            
   min-width: 300px;
   height: 130px;
   border-radius: 20px;
@@ -879,8 +875,8 @@ main.info {
   align-items: center;
   justify-content: center;
 
-  background-color: transparent;  /* no white background */
-  color: #fafafa;                /* text color */
+  background-color: transparent;  
+  color: #fafafa;                
   font-family: "Inter Display", sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -894,12 +890,12 @@ main.info {
 
 /* Student button wider */
 .student-btn {
-  width: 320px;             /* adjust until it fits the text nicely */
+  width: 320px;           
 }
 
 /* Text inside button */
 .ticket-btn span {
-  width: auto;              /* allow text to scale */
+  width: auto;            
   text-align: center;
   color: #fafafa;
   font-family: "Inter Display", sans-serif;
@@ -955,18 +951,18 @@ main.info {
 }
 
 .tickets img {
-  width: 100%;       /* scale width automatically */
-  height: auto;      /* scale height proportionally */
+  width: 100%;      
+  height: auto;      
   display: block;
-  margin: 0;    /* center horizontally */
+  margin: 0;   
 }
 
 .ticket-row {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* button left, quantity right */
-  gap: 540px; /* space between button and quantity */
-  width: 310px; /* adjust width as needed */
+  justify-content: space-between; 
+  gap: 540px; 
+  width: 310px; 
 }
 
 .ticket-quantity {
@@ -978,19 +974,18 @@ main.info {
   color: #fafafa;
 }
 
-/* Staircase container spans the whole page */
 .staircase-buttons {
-  position: absolute;   /* absolutely position relative to the page */
+  position: absolute;  
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;        /* full page height */
-  z-index: 100;         /* above the PNG but below nav bars */
+  height: 100vh;       
+  z-index: 100;        
 }
 
 /* Base button styling */
 .action-btn {
-  position: absolute;   /* position each button independently */
+  position: absolute;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1006,10 +1001,9 @@ main.info {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Button 1: top-left */
 .date-btn {
-  top: 1790px;       /* distance from top of page */
-  left: 800px;      /* distance from left edge */
+  top: 1790px;      
+  left: 800px;     
   width: 440px;
   height: 200px;
   color: #0000c5;
@@ -1018,8 +1012,8 @@ main.info {
 
 /* Button 2: bottom-right */
 .checkout-btn {
-  bottom: -1000px;     /* distance from bottom */
-  right: 700px;      /* distance from right edge */
+  bottom: -1000px;    
+  right: 700px;    
   width: 420px;
   height: 220px;
   color: #fafafa;
@@ -1036,6 +1030,7 @@ main.info {
 body, button, a, input {
   cursor: url('images/cursor.png') 16 16, auto;
 }
+
 
 
 
